@@ -115,8 +115,11 @@
 									</div>
 								</div>
 								<div class="col-lg-3 col-md-6 col-xs-6">
-									<select id = "mySelect" name="location" class="app-select form-control" required>
+									<select name="location" class="app-select form-control" required>
 										<option data-display="Choose locations">Choose locations</option>
+										<option value="1">Dhaka</option>
+										<option value="2">Rangpur</option>
+										<option value="3">Bogra</option>
 									</select>
 								</div>
 								<div class="col-lg-3 col-md-6 col-xs-6">
@@ -608,22 +611,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
-		var cars = ["Saab", "Volvo", "BMW"];
-		var x = document.getElementById("mySelect");
-		console.log(x);
-
 		var a = "abc";
 		console.log(a);
-		var myobject = {
-			1 : 'TP HCM',
-			2 : 'HN',
-			3 : 'Long An'
-		};
-
-		var select = document.getElementById("mySelect");
-		for(index in myobject) {
-			select.options[select.options.length] = new Option(myobject[index], index);
-		}
 	</script>
 </body>
 
